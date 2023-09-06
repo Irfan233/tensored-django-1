@@ -14,7 +14,7 @@
       <h1><span>Image Prediction Tool</span> with Django</h1>
     </div>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data" action="{% url 'index' %}">
       {% csrf_token %}
       <input
         class="custom-file-upload"
